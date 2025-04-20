@@ -12,7 +12,7 @@ import yfinance as yf
 
 # Step 1: Load historical stock price data
 ticker = 'AAPL'  # Apple Inc.
-data = yf.download(ticker, start='2015-01-01', end='2023-12-31')
+data = yf.download(ticker, start='2015-01-01', end='2025-04-20')
 closing_prices = data['Close'].values.reshape(-1, 1)
 
 # Step 2: Normalize the data
